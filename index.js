@@ -41,8 +41,8 @@ function renderGame() {
         hasBlackJack = true
         // Trigger confetti
         confetti({
-            particleCount: 400,
-            spread: 70,
+            particleCount: 4000,
+            spread: 200,
             origin: { y: 0.6 }
         });
     } else {
