@@ -39,6 +39,12 @@ function renderGame() {
     } else if (sum === 21) {
         message = "You've got Blackjack!"
         hasBlackJack = true
+        // Trigger confetti
+        confetti({
+            particleCount: 400,
+            spread: 70,
+            origin: { y: 0.6 }
+        });
     } else {
         message = "You're out of the game!"
         isAlive = false
